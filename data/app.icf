@@ -1,0 +1,12 @@
+[S3E]
+MemMgrMaxAllocWarning=0
+WinTitle="noname"
+WinResizable="1"
+WinWidth=1024
+WinHeight=768
+MemSize=20971520
+[GL]
+[GX]
+DataCacheSize=307200
+VertCacheSize=51200
+UnIndexedStreamMax=25600

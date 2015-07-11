@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <Globals TargetEnvironment="1" ImportPrecision="3" ExportPrecision="3" ObjectMoveSpeed="10" ObjectRotateSpeed="5" ObjectScaleSpeed="0.05" ObjectMouseRotateSpeed="1" SnapXDistance="3" SnapYDistance="3" SnapInclusionRange="100000" VirtualResolution="1024,768" VirtualScreenVisible="True" />
+  <MarmProperties Setname="Default" ae_DebugInfo="1" ae_EncrptionKey="add_your_own_key" ae_FacebookAppID="add_your_own_facebook_app_id" extra_deployment="android-extra-strings='(app_id,fb_app_id)'" icf_MemSize="20971520" icf_VirtualLetterbox="False" icf_VirtualResolution="False" icf_DataCacheSize="307200" icf_VertCacheSize="51200" icf_UnIndexedStreamMax="25600" />
+  <WebProperties Setname="Default" Description="MyGame" TargetFrameRate="60" ClearCanvas="True" Box2D="True" JQuery="False" />
+  <Bookmark Index="1" Position="237.86,-290.19,0" Scale="2.4" />
+  <Bookmark Index="2" Position="1303.46,-297.87,0" Scale="2.4" />
+  <Image Name="crate" Location="C:\Users\cmcoto\Documents\Game Development\Goji Projects\crate.png" />
+  <Image Name="ground" Location="C:\Users\cmcoto\Documents\Game Development\Goji Projects\ground.png" />
+  <Brush Name="crate" Rect="0,0,157,142" ScaleArea="0,0,0,0" Image="crate" BrushType="0" />
+  <Brush Name="ground" Rect="0,0,512,125" ScaleArea="0,0,0,0" Image="ground" BrushType="0" />
+  <Script Name="Common.lua" ScriptType="0" Load="True" Location="C:\Users\cmcoto\Documents\Game Development\Goji Projects\Nave\Common.lua" />
+  <Script Name="fly" ScriptType="0" Load="True" Location="C:\Users\cmcoto\Documents\Game Development\Goji Projects\Nave\noname.lua" />
+  <Scene Name="gamescene" Position="-620,-20" CanvasSize="1024,768" CanvasFit="4" TouchPan="0" Extents="0,0,0,0" TargetX="player" TargetY="player" FollowSpeed="1,1" VelocityDamping="0.2,0.2" Gravity="0,10" WorldScale="10,10" PhysicsTimestep="0.0333333333333333">
+    <Font Name="gameFont" PointSize="35" AutoPointSize="10" />
+    <Material Name="dynFixed" MaterialType="1" Density="1" Friction="0.1" Restitution="0.2" GravityScale="1" IsBullet="false" FixedRotation="true" />
+    <Material Name="dynamic" MaterialType="1" Density="1" Friction="0.1" Restitution="0.1" GravityScale="1" IsBullet="false" FixedRotation="false" />
+    <Material Name="static" MaterialType="0" Density="1" Friction="0.1" Restitution="0.1" GravityScale="1" IsBullet="false" FixedRotation="false" />
+    <Icon Name="player" Position="-346,10.0000000000001" Colour="#FFFFD700" Size="32,32" AlphaMode="4" OnCollisionStart="TweenTo  &quot;yScale=3&quot; &quot;0.6&quot; &quot;0.1&quot; &quot;clamp&quot; &quot;expIn&quot; &quot;player&quot;" OnCollisionEnd="TweenTo  &quot;yScale=1&quot; &quot;0.5&quot; &quot;0.2&quot; &quot;clamp&quot; &quot;expIn&quot; &quot;player&quot;" Type="0" WrapPosition="False">
+      <Fixture Material="dynFixed" />
+    </Icon>
+    <Label Name="Prueba" Position="0,0" Colour="#00FFFFFF" Size="200,100" AlphaMode="4" Docking="1" Type="0" WrapPosition="False" Text="Prueba Prueba Prueba" Font="gameFont" TextColour="#FFFF0000" AlignH="1" AlignV="1" />
+    <Icon Name="tierra" Position="-399,278" Colour="#FFDC143C" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra5" Position="41,-272" Colour="#FFDC143C" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra13" Position="2731,-272" Colour="#FFDC143C" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra8" Position="1391,-272" Colour="#FFDC143C" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra3" Position="941,278" Colour="#FFDC143C" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra16" Position="2281,278" Colour="#FFDC143C" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra19" Position="3631,278" Colour="#FFDC143C" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra2" Position="491,278" Colour="#FF4169E1" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra10" Position="1841,278" Colour="#FF4169E1" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra18" Position="3181,278" Colour="#FF4169E1" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra4" Position="-399,-272" Colour="#FF4169E1" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra12" Position="2281,-272" Colour="#FF4169E1" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra7" Position="941,-272" Colour="#FF4169E1" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra15" Position="3631,-272" Colour="#FF4169E1" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra1" Position="41,278" Colour="#FF9ACD32" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra9" Position="1391,278" Colour="#FF9ACD32" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra17" Position="2731,278" Colour="#FF9ACD32" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra6" Position="491,-272" Colour="#FF9ACD32" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra14" Position="3181,-272" Colour="#FF9ACD32" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="tierra11" Position="1841,-272" Colour="#FF9ACD32" Size="450,80" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="wall1" Position="0,0" Colour="#FF696969" Size="32,280" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+    <Icon Name="wall2" Position="264,98" Colour="#FF696969" Size="32,280" AlphaMode="4" Type="0" WrapPosition="False">
+      <Fixture Material="static" />
+    </Icon>
+  </Scene>
+</xml>

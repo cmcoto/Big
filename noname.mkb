@@ -1,0 +1,33 @@
+#!/usr/bin/env mkb
+# Quick Project
+
+if {{ option use_prebuilt }}
+{
+    subproject "$MARMALADE_ROOT\quick\quick_prebuilt"
+}
+else
+{
+    subproject "$MARMALADE_ROOT\quick\quick"
+}
+
+# options
+options
+{
+}
+
+# sub projects
+subprojects
+{
+}
+
+assets
+{
+    (data)
+	.
+}
+
+deployment
+{
+	["Default"]
+android-extra-strings='(app_id,fb_app_id)'
+}
